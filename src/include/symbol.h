@@ -58,7 +58,7 @@ inline int symbol::operator!=(symbol p) const
 
 inline unsigned long symbol::hash() const
 {
-  return (unsigned long)s;
+  return (unsigned long)(intptr_t)s;
 }
 
 inline const char *symbol::contents() const
